@@ -4,6 +4,9 @@ By Vladimir Novick @[NovickLabs](novicklabs.com)
 
 In this workshop, you'll learn the best practices and strategies to optimize React Native applications. Through hands-on exercises, you'll identify, measure, and improve performance bottlenecks within an app.
 
+Slides:
+[https://slides.com/vladimirnovick/debug/](https://slides.com/vladimirnovick/debug/)
+
 ## Exercises
 
 ### Exercise 1: HomeScreen Optimization
@@ -35,22 +38,6 @@ _Open a PR on GitHub with your solutions and screenshots for Exercises 1 & 2._
 - **Bonus Homework**: For animations that cannot be offloaded to the UI thread, use Reanimated library to optimize them.
 
 _Reply to your GitHub issue with screenshots of your measurements and improvements for Exercise 3._
-
-## Workshop Structure
-
-### Session 1: Efficient Rendering
-
-- Introduction to React Dev Tools in Flipper.
-- Measuring UI re-renders
-- Lists optimizations
-- Inputs optimizations.
-
-### Session 2: Advanced Optimizations
-
-- How to measure FPS in React Native apps.
-- Deep dive into animations
-- Understand and optimize memory leaks
-- Discussion on API calls and improving their efficiency.
 
 ## Helpful Links
 
