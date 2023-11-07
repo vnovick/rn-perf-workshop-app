@@ -1,3 +1,4 @@
+import {Icon} from '@rneui/base';
 import {makeStyles} from '@rneui/themed';
 import React, {useState} from 'react';
 import {Text, TextInput, SafeAreaView} from 'react-native';

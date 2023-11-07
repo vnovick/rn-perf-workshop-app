@@ -1,21 +1,21 @@
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 import {View, SafeAreaView} from 'react-native';
 import {Footer} from '../components';
 import {makeStyles} from '@rneui/themed';
 
 export const SimpleExampleScreen = () => {
   const styles = useStyles();
-  const [_value, setValue] = useState('initial value');
+  // const [_value, setValue] = useState('initial value');
 
-  useEffect(() => {
-    setTimeout(() => {
-      setValue('update 1');
-    }, 3000);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     setValue('update 1');
+  //   }, 3000);
 
-    setTimeout(() => {
-      setValue('update 2');
-    }, 5000);
-  }, []);
+  //   setTimeout(() => {
+  //     setValue('update 2');
+  //   }, 5000);
+  // }, []);
 
   // Profiler API:
   // https://react.dev/reference/react/Profiler

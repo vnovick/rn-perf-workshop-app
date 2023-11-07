@@ -12,6 +12,8 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		4F41BE192AFA8E19009AAE51 /* RNCallStackLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F41BE182AFA8E19009AAE51 /* RNCallStackLogger.swift */; };
+		4F41BE1B2AFA8E54009AAE51 /* RNCallstackLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F41BE1A2AFA8E54009AAE51 /* RNCallstackLogger.m */; };
 		7699B88040F8A987B510C191 /* libPods-rnperformanceworkshop-rnperformanceworkshopTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnperformanceworkshop-rnperformanceworkshopTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -38,6 +40,8 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = rnperformanceworkshop/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-rnperformanceworkshop-rnperformanceworkshopTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnperformanceworkshop-rnperformanceworkshopTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-rnperformanceworkshop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnperformanceworkshop.debug.xcconfig"; path = "Target Support Files/Pods-rnperformanceworkshop/Pods-rnperformanceworkshop.debug.xcconfig"; sourceTree = "<group>"; };
+		4F41BE182AFA8E19009AAE51 /* RNCallStackLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RNCallStackLogger.swift; sourceTree = "<group>"; };
+		4F41BE1A2AFA8E54009AAE51 /* RNCallstackLogger.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCallstackLogger.m; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-rnperformanceworkshop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnperformanceworkshop.release.xcconfig"; path = "Target Support Files/Pods-rnperformanceworkshop/Pods-rnperformanceworkshop.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-rnperformanceworkshop-rnperformanceworkshopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rnperformanceworkshop-rnperformanceworkshopTests.debug.xcconfig"; path = "Target Support Files/Pods-rnperformanceworkshop-rnperformanceworkshopTests/Pods-rnperformanceworkshop-rnperformanceworkshopTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-rnperformanceworkshop.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rnperformanceworkshop.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -92,6 +96,8 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				4F41BE182AFA8E19009AAE51 /* RNCallStackLogger.swift */,
+				4F41BE1A2AFA8E54009AAE51 /* RNCallstackLogger.m */,
 			);
 			name = rnperformanceworkshop;
 			sourceTree = "<group>";
@@ -207,7 +213,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -412,7 +418,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F41BE1B2AFA8E54009AAE51 /* RNCallstackLogger.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				4F41BE192AFA8E19009AAE51 /* RNCallStackLogger.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-rnperformanceworkshop-rnperformanceworkshopTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -459,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-rnperformanceworkshop-rnperformanceworkshopTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = rnperformanceworkshopTests/Info.plist;
@@ -604,7 +614,8 @@
 					"$(inherited)",
 					"-Wl",
 					"-ld_classic",
-					" ",
+					"-Wl",
+					"-ld_classic",
 					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
@@ -680,7 +691,8 @@
 					"$(inherited)",
 					"-Wl",
 					"-ld_classic",
-					" ",
+					"-Wl",
+					"-ld_classic",
 					"-Wl -ld_classic ",
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";

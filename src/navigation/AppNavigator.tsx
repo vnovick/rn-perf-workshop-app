@@ -7,8 +7,10 @@ import {ProfileScreen} from '../screens/ProfileScreen';
 import {DetailsScreen} from '../screens/DetailsScreen';
 import {SimpleExampleScreen} from '../screens/SimpleExampleScreen';
 import {InputExampleScreen} from '../screens/InputExampleScreen';
+import {FirstScreen} from '../screens/FirstScreen';
 
 export type RootStackParamList = {
+  First: undefined;
   Home: undefined;
   Profile: undefined;
   Details: {postId: string};
@@ -20,7 +22,8 @@ const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export const AppNavigator: React.FC = () => {
   return (
-    <Stack.Navigator initialRouteName="Home">
+    <Stack.Navigator initialRouteName="First">
+      <Stack.Screen name="First" component={FirstScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />
       <Stack.Screen name="Details" component={DetailsScreen} />

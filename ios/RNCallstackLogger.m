@@ -1,8 +1,8 @@
-//
-//  RNCallstackLogger.m
-//  rnperformanceworkshop
-//
-//  Created by Vladimir Novick on 07/11/2023.
-//
+// RNCallStackLoggerBridge.m
+#import <React/RCTBridgeModule.h>
 
-#import <Foundation/Foundation.h>
+@interface RCT_EXTERN_MODULE(RNCallStackLogger, NSObject)
+
+RCT_EXTERN_METHOD(logCallStack:(RCTResponseSenderBlock)callback)
+
+@end
